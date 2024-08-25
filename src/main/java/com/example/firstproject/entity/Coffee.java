@@ -11,24 +11,24 @@ import lombok.ToString;
 @ToString
 @Entity
 @Getter
-public class Article {
+public class Coffee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-
-    @Column
-    private String title;
+    Long id;
 
     @Column
-    private String content;
+    String name;
 
-    public void patch(Article article) {
-        if (article.title != null) {
-            this.title = article.title;
+    @Column
+    String price;
+
+    public void patch(Coffee coffee) {
+        if (coffee.name != null) {
+            this.name = coffee.name;
         }
-        if (article.content != null) {
-            this.content = article.content;
+
+        if (coffee.price != null) {
+            this.price = coffee.price;
         }
     }
 }
