@@ -70,7 +70,7 @@ class ArticleServiceTest {
 
     @Test
     @Transactional
-    void create_실패_id가_포함된_dto_입력(){
+    void create_실패_id가_포함된_dto_입력() {
         // 1. 예상 데이터
         Long id = 4L;
         String title = "라라라라";
@@ -105,7 +105,7 @@ class ArticleServiceTest {
         Long id = 1L;
         String title = "안녕하세요";
         String content = null;
-        ArticleForm dto = new ArticleForm(id, title,content);
+        ArticleForm dto = new ArticleForm(id, title, content);
         Article expected = new Article(id, title, "1111");
         // 2. 실제 데이터
         Article article = articleService.update(id, dto);
@@ -143,7 +143,7 @@ class ArticleServiceTest {
 
     @Test
     @Transactional
-    void delete_실패_존재하지_않는_id_입력(){
+    void delete_실패_존재하지_않는_id_입력() {
         // 1. 예상 데이터
         Long id = -1L;
         Article expected = null;
