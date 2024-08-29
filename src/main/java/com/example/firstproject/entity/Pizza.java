@@ -1,5 +1,6 @@
 package com.example.firstproject.entity;
 
+import com.example.firstproject.dto.PizzaFormDto;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,23 +12,24 @@ import lombok.ToString;
 @ToString
 @Entity
 @Getter
-public class Article {
+public class Pizza {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column
-    private String title;
+    private String name;
 
     @Column
-    private String content;
+    private String price;
 
-    public void patch(Article article) {
-        if (article.title != null) {
-            this.title = article.title;
+    public void patch(PizzaFormDto dto) {
+        if(dto.getName() != null){
+            this.name = dto.getName();
         }
-        if (article.content != null) {
-            this.content = article.content;
+
+        if(dto.getPrice() != null){
+            this.price = dto.getPrice();
         }
     }
 }
