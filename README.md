@@ -1,6 +1,6 @@
 # 스프링 부트 3 자바 백엔드 개발 입문
 
-이 저장소는 [코딩 자율학습 스프링 부트 3 자바 백엔드 개발 입문](https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791140705078.jpg) 실습 내용을
+이 저장소는 [코딩 자율학습 스프링 부트 3 자바 백엔드 개발 입문](https://product.kyobobook.co.kr/detail/S000202971420) 실습 내용을
 포함하고 있습니다.
 
 ![image](https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791140705078.jpg)
