@@ -38,16 +38,14 @@
    ```
    <img width="1680" alt="스크린샷 2024-09-11 15 47 30" src="https://github.com/user-attachments/assets/ac92b8d3-64f7-4f0f-aa04-3808ea2f1fe9">
    <img width="1680" alt="스크린샷 2024-09-11 15 47 26" src="https://github.com/user-attachments/assets/e6dee6b6-4ba3-4585-8860-15c154599894">
-   
-   - articles 조회
-   - article 단건 조회/생성/수정/삭제
-   - comments 조회 
-   - comment 생성/수정/삭제
 
-
-
+    - articles 조회
+    - article 단건 조회/생성/수정/삭제
+    - comments 조회
+    - comment 생성/수정/삭제
 
 ## 데이터베이스 설정
+
 <img width="1432" alt="스크린샷 2024-09-11 15 52 58" src="https://github.com/user-attachments/assets/ad95e352-2979-4462-b07f-79f1a33497b5">
 
 - 기본적으로 H2 데이터베이스가 메모리 모드로 설정되어 있습니다.
@@ -59,9 +57,14 @@
     ```properties
     spring.h2.console.enabled=true
     spring.datasource.url=jdbc:h2:mem:testdb
-    spring.datasource.driverClassName=org.h2.Driver
-    spring.datasource.username=sa
-    spring.datasource.password=
-    spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
     ```
 
+## 테스트 실행 방법
+
+1. 테스트 실행:
+   ```bash
+   ./gradlew test
+   ```
+2. 테스트 결과 확인:
+    - build/reports/tests/test/index.html 파일을 열어 HTML 형식의 테스트 결과를 확인할 수
+      있습니다. <img width="1432" alt="image" src="https://github.com/user-attachments/assets/b10f3dc0-5989-4ef7-9f84-c9f150d4d213">
